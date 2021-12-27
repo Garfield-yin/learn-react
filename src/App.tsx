@@ -7,6 +7,7 @@ import Hello from "./components/Hello";
 import Count from "./hooks/Counter";
 import Clock from "./components/Clock";
 import Button from "./components/Button";
+import EffectHookExample from "./hooks/EffectHookExample";
 
 import "./App.css";
 
@@ -34,6 +35,10 @@ function App() {
 						element={<Button name="testButton" onClick={handleClick} />}
 					></Route>
 					<Route path="/hooks/count" element={<Count />}></Route>
+					<Route
+						path="/hooks/effect/hook/example"
+						element={<EffectHookExample />}
+					></Route>
 				</Routes>
 				<nav>
 					<Link to="/about">tsx examples of user</Link>
@@ -45,6 +50,10 @@ function App() {
 					<Link to="/components/button">components Button: Button</Link>
 					<br />
 					<Link to="/hooks/count">hooks example: Count</Link>
+					<br />
+					<Link to="/hooks/effect/hook/example">
+						effect hooks example: Count
+					</Link>
 				</nav>
 			</header>
 		</div>
